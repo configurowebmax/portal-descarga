@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240) !important;
+    padding: 20px;
+}
+
+.main {
+    margin-top: 30px;
+    border: 2px solid rgb(210, 210, 210);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px; /* Ajuste para pantallas más grandes */
+}
+
+.file-container {
+    max-height: 700px;
+    overflow-x: auto; /* Asegura que la tabla se ajuste en pantallas pequeñas */
+}
+
+.table {
+    max-height: 600px;
+    overflow-y: auto; 
+}
+
+table.dataTable tbody tr {
+    background-color: rgb(240, 240, 240) !important;
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 90%;
+    }
+
+    .table {
+        font-size: 12px; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+    }
+
+    .btn {
+        width: 100%; /* Asegura que los botones se ajusten en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+    .btn-group .btn {
+        width: 100%; /* Asegura que los botones dentro del grupo se ajusten en pantallas pequeñas */
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Asegura que el menú desplegable se ajuste en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 10px; /* Ajuste de tamaño de fuente para pantallas muy pequeñas */
+    }
+}
